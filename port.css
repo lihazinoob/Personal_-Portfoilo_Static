@@ -312,6 +312,23 @@ body {
     font-size: 1rem;
     padding: .8em;
   }
+  /* Responsive About */
+  .about{
+    padding-top: 10em
+  }
+  .about .aboutcontent h1{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1em;
+  }
+  .about .aboutimagecontainer{
+    height: 100%;
+  }
+  .about .aboutimagecontainer img{
+    height: 100%;
+    width: 70%;
+    border-radius: 1em;
+  }
 
 }
 
@@ -360,6 +377,31 @@ body {
     font-size: .8rem;
     padding: .6em;
   }
+  /* Responsive About */
+  .about{
+    padding-top: 5em;
+  }
+  .about .aboutcontent h1{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1em;
+  }
+  .about .aboutcontent p{
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 1em;
+    color: var(--tertiary-color);
+    
+  }
+  .about .aboutimagecontainer{
+    height: 100%;
+  }
+  .about .aboutimagecontainer img{
+    height: 100%;
+    width: 70%;
+    border-radius: 1em;
+  }
+
 }
 
 @media screen and (max-width: 320px){
@@ -413,6 +455,42 @@ body {
     height: 100%;
     width: 100%;
     border-radius: 1em;
+  }
+  /* Responsive About */
+  .about{
+    /* padding-top: 20em; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    flex-wrap: wrap;
+
+  }
+  .about .aboutimagecontainer{
+    height: 100%;
+    width: 100%;
+    padding-left: 0em;
+
+  }
+  .about .aboutimagecontainer img{
+    height: 100%;
+    width: 100%;
+    border-radius: 1em;
+    
+  }
+  .about .aboutcontent{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1.5em;
+    
+  }
+  .about .aboutcontent h1{
+    display: none;
   }
 
 }
