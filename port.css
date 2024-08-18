@@ -103,6 +103,23 @@ body {
   flex-direction: column;
   
 }
+.home .tagline h1{
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 1em;
+  color: var(--primary-color);
+}
+.home .tagline .dynamictext{
+  font-size: 1.5rem;
+  font-weight: 150;
+  margin-bottom: 1em;
+  color: var(--tertiary-color);
+}
+.home .tagline span{
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--tertiary-color);
+}
 .home .tagline .dynamictext ul li
 {
   /* overflow: hidden; */
@@ -145,6 +162,26 @@ body {
   box-shadow: 0em 0em 2.8em var(--primary-color); /* Adds a subtle shadow */
   cursor:help;
   
+}
+
+.home .tagline .socialcontainer a{
+  text-decoration: none;
+  padding: 1em;
+}
+
+.home .tagline .socialcontainer a i{
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  padding: 1em;
+  transition: 0.5s ease-in-out;
+  /* box-sizing: content-box; */
+  border-radius: 50%;
+  box-shadow: 0em 0em 1.4em var(--primary-color); /* Adds a subtle shadow */
+}
+.home .tagline .socialcontainer a i:hover{
+  transform: scale(1.5);
+  box-shadow: 0em 0em 0em var(--primary-color); /* Adds a subtle shadow */
+  cursor:help;
 }
 
 
