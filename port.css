@@ -222,6 +222,44 @@ body {
     color: var(--primary-color);
     cursor: pointer;
   }
+  /* Resposive for the Home Section */
+  .home{
+    padding-top: 2em;
+  }
+  .home .tagline h1{
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 1em;
+    color: var(--primary-color);
+  }
+  .home .tagline span{
+    font-size: 2rem;
+  }
+  .home .tagline .dynamictext ul li
+  {
+    font-size: 1.3rem;
+    font-weight: 150;
+    margin-bottom: 1em;
+    color: var(--tertiary-color);
+  }
+  .home .tagline .dynamictext ul li span{
+    font-size: 1.1em;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    transition: 0.3s ease-in-out;
+  }
+  .home .imagecontainer{
+    width: 70%;
+  }
+  .home .tagline .socialcontainer a{
+    padding: .8em;
+  }
+  .home .tagline .socialcontainer a i{
+    font-size: 1rem;
+    padding: .8em;
+  }
+
 }
 
 @media screen and (max-width:768px)
@@ -260,6 +298,14 @@ body {
     background-color: var(--secondary-color);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1;
+  }
+  /* Home Section CSS Resposive */
+  .home .tagline .socialcontainer a{
+    padding: .6em;
+  }
+  .home .tagline .socialcontainer a i{
+    font-size: .8rem;
+    padding: .6em;
   }
 }
 
