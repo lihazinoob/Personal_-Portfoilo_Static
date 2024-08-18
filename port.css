@@ -317,6 +317,49 @@ body {
     padding-left: 1em;
     justify-content: center;
     align-items: center;
+  }
+  /* Responsive Home */
+  .home{
+    /* padding-top: 2.5em; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
   }
+  .home .tagline{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .home .tagline h1{
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 1em;
+    color: var(--primary-color);
+  }
+  .home .tagline span{
+    font-size: 1.5rem;
+  }
+  .home .tagline .dynamictext ul li
+  {
+    font-size: 1rem;
+    font-weight: 150;
+    margin-bottom: 1em;
+    color: var(--tertiary-color);
+  }
+  .home .imagecontainer{
+    margin-top: -2em;
+    width: 80%;
+    height: 100%;
+  }
+  .home .imagecontainer img{
+    height: 100%;
+    width: 100%;
+    border-radius: 1em;
+  }
+
 }
