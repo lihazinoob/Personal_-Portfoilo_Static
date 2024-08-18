@@ -81,6 +81,72 @@ body {
   margin-right: 1em;
 }
 
+/* Css for Home Section */
+
+.home{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  
+  
+}
+
+.home .tagline{
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.home .tagline .dynamictext ul li
+{
+  /* overflow: hidden; */
+  /* list-style: none; */
+  font-size: 1.5rem;
+  font-weight: 150;
+  margin-bottom: 1em;
+  color: var(--tertiary-color);
+}
+.home .tagline .dynamictext ul li span{
+  font-size: 1.2em;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+  /* overflow: hidden; */
+}
+
+.home .imagecontainer{
+  aspect-ratio: 1 / 1; /* Maintains a square aspect ratio */
+  height: auto;
+  width: 50%; 
+  transition: 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home .imagecontainer img {
+  height: 50%;
+  width: 50%;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0em 0em 1.4em var(--primary-color); /* Adds a subtle shadow */
+  transition: .3s ease-in-out; /* Smooth transition */
+}
+
+.home .imagecontainer img:hover{
+  transform: scale(1.1);
+  box-shadow: 0em 0em 2.8em var(--primary-color); /* Adds a subtle shadow */
+  cursor:help;
+  
+}
+
 
 
 /* Responsive Design */
