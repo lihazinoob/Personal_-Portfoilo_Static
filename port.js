@@ -14,3 +14,24 @@ linksfornavigation.forEach((link) => {
     navLinks.classList.remove("open");
   });
 });
+
+// For Making a DropDown Menu for Skills Section.
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Get all the dropdown arrows
+  const dropdownArrows = document.querySelectorAll('.droparrow');
+
+  dropdownArrows.forEach((arrow) => {
+    arrow.addEventListener('click', (e) => {
+      // Find the corresponding skillsbar
+      const box = e.target.closest('.box');
+      const skillsBar = box.querySelector('.skillsbar');
+
+      // Toggle the 'active' class to show/hide the skillsbar
+      skillsBar.classList.toggle('clicked');
+      
+      // Optional: Toggle the arrow direction
+      arrow.classList.toggle('clicked');
+    });
+  });
+});
