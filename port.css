@@ -287,6 +287,110 @@ body {
 
 }
 
+/* Skills CSS */
+
+.skills{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 5em;
+}
+
+
+.skills h1{
+  /* transform: translateX(-500%); */
+  font-size: 3rem;
+  font-weight: 600;
+  /* margin-bottom: 1em; */
+  /* opacity: 0; */
+}
+.skills .skills_subtitle{
+  /* transform: translate(500%); */
+  font-size: 1.5rem;
+  font-weight: 300;
+  /* margin-bottom: 1em; */
+  color: var(--tertiary-color);
+  /* opacity: 0; */
+
+}
+.skills .skillscontainer{
+  margin-top: 3.5em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2em;
+  padding: 2em;
+  /* overflow-x: hidden; */
+  
+
+}
+
+.skills .skillscontainer .box .boxhead{
+  padding: 1em;
+  background-color: var(--secondary-color) ;
+  box-shadow: 0em 0em 1.4em var(--secondary-color); /* Adds a subtle shadow */
+  border-color: var(--primary-color);
+  border-radius: .5em;
+  transition: .3s ease-in-out; /* Smooth transition */
+  position: relative;
+  display: inline-block;
+  width: 80%;
+}
+.skills .skillscontainer .box .boxhead:hover{
+  transform: translateY(-0.5em);
+  box-shadow: 0em 0em 2em var(--primary-color); /* Increase the shadow size and change color for the uplift effect */
+}
+.skills .skillscontainer .box .skillsbar{
+  display: none;
+  position: absolute;
+}
+.skills .skillscontainer .box .clicked {
+  margin-top: 1em;
+  padding: 1em;
+  background-color: var(--secondary-color) ;
+  box-shadow: 0em 0em 1.4em var(--secondary-color); /* Adds a subtle shadow */
+  border-color: var(--primary-color);
+  border-radius: .5em;
+  transition: .3s ease-in-out; /* Smooth transition */
+  position: relative;
+  display: block;
+  width: 80%;
+  
+  
+}
+.skills .skillscontainer .box .clicked .list{
+  /* background-color: var(--primary-color) ; */
+  box-shadow: 0em 0em 1.4em var(--secondary-color); /* Adds a subtle shadow */
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.skills .skillscontainer .box .clicked .list i{
+  font-size: 2rem;
+  color: var(--tertiary-color);
+  padding: .2em;
+  transition: 0.5s ease-in-out;
+}
+.skills .skillscontainer .box .clicked .list i:hover{
+  color: var(--primary-color);
+  cursor:help;
+  transform: translateY(-0.5em);
+}
+
+
+.skills .skillscontainer .box .title{
+  display: flex;
+  flex-direction: row;
+  justify-content: wrap;
+  align-items: center;
+  gap: 1em;
+  font-size: 1.5rem;
+}
+
 
 
 /* Responsive Design */
@@ -565,6 +669,7 @@ body {
   .education .educationcontainer .box{
     font-size: 1em;
   }
+
 
 
 }
