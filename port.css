@@ -543,4 +543,28 @@ body {
     display: none;
   }
 
+  /* Education Responsive */
+  
+  .education h1{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1em;
+    justify-content: center;
+  }
+
+  .education .educationcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+    width: 80%;
+    
+
+  }
+  .education .educationcontainer .box{
+    font-size: 1em;
+  }
+
+
 }
