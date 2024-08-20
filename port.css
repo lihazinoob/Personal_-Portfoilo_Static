@@ -319,7 +319,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.2em;
-  padding: 2em;
+  padding-left: 2em; 
   /* overflow-x: hidden; */
   
 
@@ -335,6 +335,10 @@ body {
   position: relative;
   display: inline-block;
   width: 80%;
+}
+.skills .skillscontainer .box .boxhead .title p{
+  
+  color: var(--tertiary-color);
 }
 .skills .skillscontainer .box .boxhead:hover{
   transform: translateY(-0.5em);
@@ -555,6 +559,13 @@ body {
     width: 70%;
     border-radius: 1em;
   }
+  /* SKill Section Responsive */
+  .skills .skillscontainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2em;
+    padding-left: 2em;
+  }
 
 }
 
@@ -648,6 +659,7 @@ body {
   }
 
   /* Education Responsive */
+
   
   .education h1{
     font-size: 1.2rem;
@@ -669,6 +681,22 @@ body {
   .education .educationcontainer .box{
     font-size: 1em;
   }
+  /* Skills Section Responsive */
+  
+  .skills .skills_subtitle{
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 1em;
+    color: var(--tertiary-color);
+  }
+  .skills .skillscontainer{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.2em;
+    padding-left: 2em;
+  }
+  
+
 
 
 
