@@ -35,3 +35,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+// Implementing Dark Mode
+
+const tog = document.getElementById('toggler');
+var Boolean = true;//Boolean true hoile dark mode on hobe
+tog.addEventListener('click', function(){
+  document.body.classList.toggle('light');
+});

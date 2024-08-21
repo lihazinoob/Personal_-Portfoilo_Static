@@ -7,6 +7,14 @@
   --tertiary-color: white;
   --background-color: black;
 }
+/* Light Theme Variables */
+.light{
+  /* light theme variables */
+  --primary-color: #1E1E1E;
+  --secondary-color: #E6AD3C;
+  --tertiary-color:black;
+  --background-color: white;
+}
 
 body {
   font-family: "Poppins", sans-serif;
@@ -937,7 +945,7 @@ body {
     margin-top: 2em;
     flex: 2;
     display: flex;
-    
+
   }
   .contact .contactcontainer .messageholder form .btn{
     width: 100%;
