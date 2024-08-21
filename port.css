@@ -7,6 +7,14 @@
   --tertiary-color: white;
   --background-color: black;
 }
+/* Light Theme Variables */
+.light{
+  /* light theme variables */
+  --primary-color: #1E1E1E;
+  --secondary-color: #E6AD3C;
+  --tertiary-color:black;
+  --background-color: white;
+}
 
 body {
   font-family: "Poppins", sans-serif;
@@ -494,32 +502,24 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-top: 5em;
-  padding-bottom: 5em;
+  padding-top: 10em;
 }
 .contact h1{
-  /* transform: translateX(-500%); */
   font-size: 3rem;
   font-weight: 600;
   margin-bottom: 1em;
 }
-
 .contact .contactcontainer{
   display: flex;
   align-items: center;
   justify-content: center;
-  /* flex-wrap: wrap; */
-  gap: 10em;
-  /* background-color: var(--primary-color); */
+  flex-direction: row;
+  gap: 1em;
+  padding-left: 2.5em;
+  padding-right: 5em;
 }
 .contact .contactcontainer .addressholder{
   flex: 1;
-}
-
-.contact .contactcontainer .addressholder i{
-  font-size: 1rem;
-  font-weight: 600;
-  /* margin-bottom: 1em; */
 }
 .contact .contactcontainer .addressholder h3{
   font-size: 1.5rem;
@@ -536,7 +536,6 @@ body {
   margin-top: 1em;
   
 }
-
 .contact .contactcontainer .messageholder{
   flex: 2;
   display: flex;
@@ -557,7 +556,6 @@ body {
   border: 1px solid var(--primary-color);
   background-color: var(--secondary-color);
   color: var(--tertiary-color);
-  z-index: 10;
 }
 .contact .contactcontainer .messageholder form textarea{
   width: 100%;
@@ -566,7 +564,6 @@ body {
   border: 1px solid var(--primary-color);
   background-color: var(--secondary-color);
   color: var(--tertiary-color);
-  z-index: 10;
 }
 .contact .contactcontainer .messageholder form .btn{
   width: 50%;
@@ -583,7 +580,6 @@ body {
   color: var(--secondary-color);
   cursor:help;
 }
-
 
 
 /* Responsive Design */
@@ -756,6 +752,12 @@ body {
     padding-left: 2em;
   }
 
+  /* Contact ME Section resposnsive */
+  .contact .contactcontainer{
+    padding-left: 2.5em;
+    padding-right: 5em;
+  }
+
 }
 
 @media screen and (max-width: 320px){
@@ -923,7 +925,31 @@ body {
     box-shadow: 0em 0em 2em var(--primary-color); /* Increase the shadow size and change color for the uplift effect */
   }
 
+  /* Contact ME section responsive */
+  .contact h1{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1em;
+  }
+  .contact .contactcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    padding-left: 2.5em;
+    padding-right: 5em;
+  }
 
+  .contact .contactcontainer .messageholder{
+    margin-top: 2em;
+    flex: 2;
+    display: flex;
+
+  }
+  .contact .contactcontainer .messageholder form .btn{
+    width: 100%;
+  }
 
 
 }
