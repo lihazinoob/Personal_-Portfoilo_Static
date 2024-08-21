@@ -488,6 +488,103 @@ body {
   opacity: 1; /* Show the layer on hover */
 }
 
+/* About ME CSS */
+.contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+.contact h1{
+  /* transform: translateX(-500%); */
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+.contact .contactcontainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  gap: 10em;
+  /* background-color: var(--primary-color); */
+}
+.contact .contactcontainer .addressholder{
+  flex: 1;
+}
+
+.contact .contactcontainer .addressholder i{
+  font-size: 1rem;
+  font-weight: 600;
+  /* margin-bottom: 1em; */
+}
+.contact .contactcontainer .addressholder h3{
+  font-size: 1.5rem;
+  font-weight: 300;
+  /* margin-bottom: 1em; */
+}
+.contact .contactcontainer .addressholder p{
+  font-size: 1rem;
+  font-weight: 150;
+  /* margin-bottom: 1em; */
+  color: var(--tertiary-color);
+}
+.contact .contactcontainer .addressholder .mailaddress{
+  margin-top: 1em;
+  
+}
+
+.contact .contactcontainer .messageholder{
+  flex: 2;
+  display: flex;
+  
+  flex-direction: column;
+  gap: 1em;
+}
+.contact .contactcontainer .messageholder form{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+}
+.contact .contactcontainer .messageholder input{
+  width: 100%;
+  padding: 1em;
+  border-radius: .5em;
+  border: 1px solid var(--primary-color);
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color);
+  z-index: 10;
+}
+.contact .contactcontainer .messageholder form textarea{
+  width: 100%;
+  padding: 1em;
+  border-radius: .5em;
+  border: 1px solid var(--primary-color);
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color);
+  z-index: 10;
+}
+.contact .contactcontainer .messageholder form .btn{
+  width: 50%;
+  padding: 1em;
+  border-radius: .5em;
+  border: 1px solid var(--primary-color);
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color);
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.contact .contactcontainer .messageholder form .btn:hover{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  cursor:help;
+}
+
+
 
 /* Responsive Design */
 @media screen and (max-width: 1024px){
